@@ -1,0 +1,61 @@
+body {
+    background-color: #27275C;
+}
+header {
+    background-color: #2B3B6A  ;
+    text-align: center;
+    padding: 10px 0;
+}
+
+h1 {
+    color: #66B2FF ;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    margin: 0;
+}
+p, h2, h3, hr{
+    color: #60b6d3;
+}
+h2{
+    font-size: 35px;
+}
+h3{
+    font-size: 20px;
+    margin: 8px 25px;
+}
+p{
+    font-size: 16px;
+    margin: 0 50px;
+}
+
+img#ProfilePicture {
+    width: 100px;
+    height: auto;
+}
+div#IntroFlex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin-top: 10px;
+}
+
+ul {
+    list-style: none; /* Remove default bullet points */
+    padding-left: 0;  /* Remove default padding */
+}
+ul li h3::before {
+    content: "– "; /* Add a dash and a space before each list item */
+    color: inherit; /* Use the same color as the list item text */
+    font-size: 20px;
+}
+ul li p::before {
+    content: "  – "; /* Add a dash and a space before each list item */
+    color: inherit; /* Use the same color as the list item text */
+}
+
+a:link{color:#238db1}
+a:visited{color:#608ed3}
+a:hover, a:focus{color:#b1d5fd}
+a:active{color:#d2afff}
