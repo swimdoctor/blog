@@ -15,22 +15,21 @@ We’re gonna start by wiring up all of our LEDs and our button. First, our LEDs
 Now we have our circuit, but the Arduino doesn’t know what to do yet! Let’s take a look at our code for this project. As a quick overview, most Arduino projects will have 2 main functions: setup(), which runs once when the program is first started, and loop(), which runs itself repeatedly while the Arduino is on.
 
 To start, we’ll make a variable to store if we’re pressing the button
-
 ```cpp
 int switchState = 0;
 ```
-
 Then in setup, we'll tell the Arduino what we're using the pins for. We have the LEDs in pins 3, 4, and 5, so those will be marked as Output pins. The switch in pin 2 will be marked as Input.
 ```cpp
 void setup() {
-  // put your setup code here, to run once:
+  // Telling the Arduino what pins we are using
   pinMode(3, OUTPUT);
   pinMode(4, OUTPUT);
   pinMode(5, OUTPUT);
   pinMode(2, INPUT);
 }
 ```
-
+Now let's look at loop. First, we'll update the switch state using a digitalRead, then we'll do different things based on the current state of the switch. If the switchState is LOW, meaning that the switch is unpressed, we'll only turn on the green light. If switchState is HIGH, we'll flash between the two red lights every quarter second.
+```cpp
 void loop() {
   // put your main code here, to run repeatedly:
   switchState = digitalRead(2);
@@ -51,4 +50,9 @@ void loop() {
     delay(250);
   }
 }
+```
+Here's what that looks like once we get it on the board:
 
+[Gif of the final circuit]
+
+This has been a great introduction to using the board to handle both inputs and outputs, with logic in between. Next up, we'll use some analog inputs to make a love-o-meter!
