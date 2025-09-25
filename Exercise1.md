@@ -1,6 +1,10 @@
 Exercise 1: Introduction and Setup
 
-Alright, we have all the parts and now it’s time to start putting them together. For this exercise, we’ll be using 1 LED, 2 Push Buttons, a 220 Ohm Resistor, and a few assorted jumper wires, alongside the Arduino and a breadboard. 
+Alright, we have all the parts and now it’s time to start putting them together. For this exercise, alongside the Arduino and a breadboard, we’ll be using:
+ - 1 LED
+ - 2 Push Buttons
+ - 1 220 Ohm Resistor
+ - Assorted Jumper Wires 
 
 [Picture of all the components laid out]
 
