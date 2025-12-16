@@ -8,7 +8,7 @@ Alright, we have all the parts and now it’s time to start putting them togethe
 
 For this first exercise, we’ll only be using the Arduino as a power source, so we’ll start by plugging its 5V and ground pins to the + and - rows on the breadboard. We’ll then place the LED, resistor, and push button on the breadboard, creating a simple circuit as shown below. When the switch is pressed, it will complete the circuit, letting power flow through the resistor and light up the LED. 
 
-![Single Circuit](./Images/Exercise1a.jpg)
+![Single Circuit](./Images/Exercise1a.gif)
 
 The resistor is important here, as it lowers the current, making it safe for us to power the LED. If we connected the LED directly to 5V, the LED would receive too much current, and get hot and eventually break. 
 
