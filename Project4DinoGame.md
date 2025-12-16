@@ -10,6 +10,8 @@ The goal was to build a playable game with:
 - Basic player animations
 - Piezo buzzer sound effects
 
+![Sprites](./Images/Project4c.png)
+
 ---
 
 ## Project Narrative
@@ -17,6 +19,21 @@ The goal was to build a playable game with:
 When I began implementing the project, I first created the four dino frames and two cactus frames as custom LCD characters. I tested these frames on the 2x16 display to ensure that the small sprites would be readable and convey motion clearly. Below is my intial sprites vs the ones I settled on for the final game.
 
 ![Sprites](./Images/Project4a.png)
+
+Each Sprite is then represented by a byte table that gets given to the LCD
+
+```
+byte dinoChar0[8] = {
+  B00000,
+  B00000,
+  B00000,
+  B00110,
+  B01011,
+  B11110,
+  B01110,
+  B10001
+};
+```
 
 Next, I wired a push button to the Arduino to serve as the jump control. I then programmed a basic animation loop, cycling through the dino frames while running, and only showing a single leaping frame on the row above while jumping.
 
@@ -66,6 +83,8 @@ The final project is a fully playable Dino game on the 2x16 LCD, featuring:
 
 See gameplay here: <https://youtube.com/shorts/RSkeWy7UfqI?feature=share>
 
+## Parts List
+
 - Arduino Uno
 - 2x16 LCD
 - Push Button
@@ -74,6 +93,8 @@ See gameplay here: <https://youtube.com/shorts/RSkeWy7UfqI?feature=share>
 - Potentiometer
 - Breadboard
 - Jumper Wires
+
+## Circuit Diagram
 
 ![Sprites](./Images/Project4b.png)
 
@@ -87,6 +108,9 @@ If I were to continue on this project, which I might, here's some things I would
 - Adding more buttons as input, enabling...
 - More Games! While coming up with the dinosaur game idea, I came up with a full list of ideas using anywhere from 1-4 buttons of input, and I'd like to try allowing the player to choose between a selection of different games to play.
 - Designing a case in the SHED Makerspace to encapsulate the device.
+
+## Postmortem Video: 
+	<https://youtu.be/kMx1ePb0-ow>
 
 ## Sources
 
